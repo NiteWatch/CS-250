@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+void AddIngredients(vector<string>& ingredients)
+{
+	// Use the push_back function to add elements to the vector
+	ingredients.push_back("lettuce");
+	ingredients.push_back("tomato");
+	ingredients.push_back("mayo");
+	ingredients.push_back("mustard");
+	ingredients.push_back("bread");
+}
+
+void DisplayIngredients(const vector<string>& ingredients)
+{
+	//for loop to display vector elements
+	for (int i = 0; i < ingredients.size(); i++)
+	{
+		cout << i << ". " << ingredients[i] << endl;
+	}
+}
+
+int main()
+{
+	//created a vector and calling functions
+	vector<string> ingredients;
+	AddIngredients(ingredients);
+	DisplayIngredients(ingredients);
+
+	return 0;
+}
