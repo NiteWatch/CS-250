@@ -1,4 +1,4 @@
 ﻿  Source.cpp
-c:\users\svc-student\desktop\github\cs-250\lab_2\algorithm_efficiency\algorithm_efficiency\source.cpp(35): warning C4018: '<': signed/unsigned mismatch
-  Algorithm_Efficiency.vcxproj -> C:\Users\svc-student\Desktop\GitHub\CS-250\Lab_2\Algorithm_Efficiency\Debug\Algorithm_Efficiency.exe
-  Algorithm_Efficiency.vcxproj -> C:\Users\svc-student\Desktop\GitHub\CS-250\Lab_2\Algorithm_Efficiency\Debug\Algorithm_Efficiency.pdb (Partial PDB)
+c:\users\fdesaleg\desktop\github\cs-250\lab_2\algorithm_efficiency\algorithm_efficiency\source.cpp(35): warning C4018: '<': signed/unsigned mismatch
+  Algorithm_Efficiency.vcxproj -> C:\Users\fdesaleg\Desktop\GitHub\CS-250\Lab_2\Algorithm_Efficiency\Debug\Algorithm_Efficiency.exe
+  Algorithm_Efficiency.vcxproj -> C:\Users\fdesaleg\Desktop\GitHub\CS-250\Lab_2\Algorithm_Efficiency\Debug\Algorithm_Efficiency.pdb (Partial PDB)

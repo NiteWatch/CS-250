@@ -4,6 +4,11 @@
 #include <vector>
 using namespace std;
 
+//Name: Fsehazion Desalegn
+//Date: Feburary 1, 2017
+//Class: CS 250
+//Description: Implementing three different types of search algoithms.
+
 vector<string> LoadData(const string& filename)
 {
 	// Don't modify this function
@@ -45,13 +50,14 @@ int LinearSearch(const vector<string>& list, string findMe, int& cycleCounter)
 
 int CustomSearch(const vector<string>& list, string findMe, int& cycleCounter)
 {
-	// Implement your own search algorithm.
+	// Doing a backwards linear search for findMe
 	// Return the position that the item is found at,
 	// or -1 if the item is not found.
 
 	cycleCounter = 0;
+	int size = list.size();
 
-	for (int i = list.size(); i > 0; i--)
+	for (int i = size; i-- > 0;)
 	{
 		cycleCounter += 1;
 		if (list[i] == findMe)
@@ -112,11 +118,11 @@ int main()
 		cout << "Found at position " << foundPosition << " in " << cycleCounter << " cycles" << endl;
 	}
 
-	// Custom search
+	// Backward Linear search
 	cout << endl << "CUSTOM SEARCH" << endl;
 	for (int i = 0; i < 4; i++)
 	{
-		cout << "Custom search - looking for \"" << searchItems[i] << "\"... ";
+		cout << "Backward Linear search - looking for \"" << searchItems[i] << "\"... ";
 		int foundPosition = CustomSearch(countries, searchItems[i], cycleCounter);
 		cout << "Found at position " << foundPosition << " in " << cycleCounter << " cycles" << endl;
 	}
