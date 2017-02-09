@@ -1,12 +1,14 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <vector>
 using namespace std;
 
 #include "Page.hpp"
 
-void LoadPages(Page pages[100], const string& filename)
+void LoadPages(vector<Page>& pages, const string& filename)
 {
+	//initialization
 	ifstream input(filename);
 	string line;
 	string pageText = "";
@@ -20,8 +22,15 @@ void LoadPages(Page pages[100], const string& filename)
 		lineCount++;
 		if (lineCount == 27)
 		{
-			// Add page to book now
-			pages[pageCount].text = pageText;
+			//Add page to book now
+			//declare page variable
+			Page page = {pageText};
+
+			//set page's .txt variable to pageText
+			pageText = page.text;
+
+			//call push_back function with the page object
+			pages.push_back(page);
 			pageCount++;
 
 			// Reset the page text
@@ -30,26 +39,22 @@ void LoadPages(Page pages[100], const string& filename)
 			// Reset the line count
 			lineCount = 0;
 		}
-
-		if (pageCount == 100)
-		{
-			// The book is full! Can't load any more.
-			return;
-		}
 	}
 
 	input.close();
 }
 
-void ReadBook(Page pages[100])
+void ReadBook(vector<Page>& pages)
 {
+	//initialization
 	int currentPage = 0;
-	int totalPages = 100;
+	int totalPages = pages.size();
 
 	bool done = false;
 
 	while (!done)
 	{
+		//access the pages vector to display the text file
 		pages[currentPage].Display();
 		cout << "--- PAGE " << currentPage + 1 << " OF " << totalPages << "---------------------------------" << endl;
 		cout << "(N)ext Page, (P)revious Page, (Q)uit" << endl;
@@ -57,6 +62,7 @@ void ReadBook(Page pages[100])
 		string choice;
 		cin >> choice;
 
+		//if statement to decide on moving to the next or previous page
 		if (choice == "Q" || choice == "q")
 		{
 			done = true;
@@ -80,10 +86,11 @@ void ReadBook(Page pages[100])
 
 int main()
 {
-	Page pages[100];
+	//initialization
+	vector<Page> page;
 
-	LoadPages(pages, "Aesop.txt");
-	ReadBook(pages);
+	LoadPages(page, "Aesop.txt");
+	ReadBook(page);
 
 	return 0;
 }
