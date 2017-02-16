@@ -1,0 +1,12 @@
+﻿  main.cpp
+c:\users\svc-student\desktop\github\cs-250\homework_2\project files\linkedlist.hpp(79): error C2660: 'LinkedList<std::string>::Push': function does not take 0 arguments
+  c:\users\svc-student\desktop\github\cs-250\homework_2\project files\linkedlist.hpp(71): note: while compiling class template member function 'void LinkedList<std::string>::Extend(const LinkedList<std::string> &)'
+  c:\users\svc-student\desktop\github\cs-250\homework_2\project files\tester.hpp(198): note: see reference to function template instantiation 'void LinkedList<std::string>::Extend(const LinkedList<std::string> &)' being compiled
+  c:\users\svc-student\desktop\github\cs-250\homework_2\project files\tester.hpp(38): note: see reference to class template instantiation 'LinkedList<std::string>' being compiled
+  TesterBase.cpp
+  System.cpp
+  Strings.cpp
+c:\users\svc-student\desktop\github\cs-250\homework_2\project files\cpp-utilities-master\strings.cpp(58): warning C4018: '<': signed/unsigned mismatch
+  Menu.cpp
+  BookProgram.cpp
+  Generating Code...
