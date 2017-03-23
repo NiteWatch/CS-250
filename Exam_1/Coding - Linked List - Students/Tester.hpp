@@ -4,9 +4,9 @@
 #define _TESTER_HPP
 
 #include "LinkedList.hpp"
-#include "cuTEST/StringUtil.hpp"
-#include "cuTEST/TesterBase.hpp"
-#include "cuTEST/Menu.hpp"
+#include "cuTest/StringUtil.hpp"
+#include "cuTest/TesterBase.hpp"
+#include "cuTest/Menu.hpp"
 
 #include <vector>
 #include <iostream>

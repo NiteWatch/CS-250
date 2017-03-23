@@ -53,8 +53,8 @@ class CoordPairLinkedList
 	  if (m_ptrFirst == m_ptrLast)
 	  {
 		//add new items to empty list
-		m_ptrFirst = newNodeX;
-		m_ptrLast = newNodeY;
+		m_ptrFirst = x;
+		m_ptrLast-> y;
 		m_ptrLast = m_ptrFirst;
 		m_itemCount++;
 	  }

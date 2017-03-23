@@ -1,2 +1,5 @@
-﻿  Visual Studio Project.vcxproj -> C:\Users\svc-student\Desktop\GitHub\CS-250\Exam_1\Coding - Linked List - Students\Visual Studio Project\Debug\Visual Studio Project.exe
-  Visual Studio Project.vcxproj -> C:\Users\svc-student\Desktop\GitHub\CS-250\Exam_1\Coding - Linked List - Students\Visual Studio Project\Debug\Visual Studio Project.pdb (Partial PDB)
+﻿  main.cpp
+c:\users\svc-student\desktop\github\cs-250\exam_1\coding - linked list - students\linkedlist.hpp(56): error C2440: '=': cannot convert from 'int' to 'Node *'
+  c:\users\svc-student\desktop\github\cs-250\exam_1\coding - linked list - students\linkedlist.hpp(56): note: Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+c:\users\svc-student\desktop\github\cs-250\exam_1\coding - linked list - students\linkedlist.hpp(57): error C2039: 'y': is not a member of 'Node'
+  c:\users\svc-student\desktop\github\cs-250\exam_1\coding - linked list - students\linkedlist.hpp(10): note: see declaration of 'Node'
